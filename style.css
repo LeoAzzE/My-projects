@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #E5E5E5;
+}
+
+header {
+  background-color: #ccc;
+}
+.container-header {
+margin: auto;
+display: flex;
+text-align: center;
+justify-content: center;
+width: auto;
+max-width: 100%;
+min-width: 320px;
+background-color:#ccc;
+color: #e5e5e5;
+}
+
+.text-content {
+text-align: center;
+}
+
+.text-content h1 {
+color: #F12C0E;
+font-family: 'Oswald', sans-serif;
+font-size: 50px;
+line-height: 30px;
+padding-top: 10px;
+}
+
+.text-content p {
+max-width: 693px;
+font-size: 16px;
+text-align: center;
+margin: 0 auto;
+text-align: center;
+word-wrap: break-word;
+font-style: italic;
+line-height: 25.6px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+margin-top: 30px;
+display: flex;
+text-align: center;
+justify-content: center;
+}
+
+.container-grid {
+display: grid;
+grid-template-rows: (2, 1fr);
+grid-template-columns: repeat(2, 1fr);
+max-width: auto;
+min-height: 620px;
+gap: 30px;
+position: relative;
+}
+
+.item-content {
+  padding: 30px 0px 30px 30px;
+  background-color: white;
+  width: 500px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.item-img1 {
+width: 255px;
+height: 250px;
+background-image: url(images/3981417.jpg);
+background-position: center;
+background-size: cover;
+}
+.item-img2 {
+width: 255px;
+height: 250px;
+background-image: url(images/pizza-dark-background-classic-italian-pizza-with-tomatoes-pepper-vegetables-sauce-mozarella-cheese-dark-kitchen-table-copy-space_90380-947.jpg);
+background-position: center;
+background-size: cover;
+}
+
+.item-img3 {
+width: 255px;
+height: 250px;
+background-image: url(images/mixed-pizza-with-olive-bell-pepper-tomato_140725-183.jpg);
+background-position: center;
+background-size: cover;
+}
+
+.item-img4 {
+width: 255px;
+height: 250px;
+background-image: url(images/sdw.jpg);
+background-position: center;
+background-size: cover;
+}
+
+.item-text {
+padding: 0 25px;
+text-align: left;
+}
+.item-text h3 {
+margin-top: 20px;
+margin-bottom: 0px;
+font-weight: 400;
+font-size: 30px;
+line-height: 19.2px;
+}
+
+.item-text p {
+font-style: italic;
+margin: 20px 0 0 ;
+font-size: 15px;
+line-height: 1.6;
+word-wrap: break-word;
+max-width: 220px;
+
+}
+
+.item-text h6 {
+font-weight: 700;
+margin: 20px 0 0;
+color: #F12C0E;
+font-size: 16px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.item-text a {
+border-radius: 5px;
+text-transform: uppercase;
+border-style: none;
+font-size: 14px;
+margin-top: 40px;
+padding: 10px 30px;
+display: inline-block;
+cursor: pointer;
+text-decoration: none;
+background-color: #e5e5e5;
+color: black;
+}
+
+.item-text a i {
+margin-right: 10px;
+}
+
+
+.footer-content {
+background-color: #ccc;
+height: 150px;
+text-align: center;
+font-size: 15px;
+padding: 10px;
+}
+
+.footer-content h3 a {
+  text-decoration: none;
+  color: orangered;
+}
+
+@media (max-width:1090px) {
+.container-grid {
+grid-template-columns: 100%;
+}
+.item-text {
+  text-align: center;
+  position: relative;
+  flex: 1;
+  
+}
+.item-content {
+padding: 0;
+}
+.item-text a {
+margin-top: 10px;
+}
+.item-text h3 {
+margin-top: 5px;
+}
+}
+
+@media (max-width: 530px) {
+.item-content {
+  width: 300px;
+  height: auto;
+  }
+.container-grid {
+max-width: auto;
+}
+.item-text a {
+border-radius: 5px;
+margin-top: 5px;
+padding: 10px;
+font-size: 15px;
+}
+.item-text h6 {
+margin: 5px;
+}
+.item-text p {
+margin-top: 5px;
+}
+}
