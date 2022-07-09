@@ -1,0 +1,110 @@
+body {
+    background-color: #ccc;
+    box-sizing: border-box;
+    margin: 70px;
+
+}
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+.calculator-area {
+    border: 2px solid gray;
+    margin: 0 auto;
+    width: 320px;
+    height: 400px;
+    background-color: white
+}
+
+.visor-area {
+display: flex;
+border: 2px solid #ccc;
+margin: 0 auto;
+margin-top: 20px;
+width: 230px;
+height: 50px;
+background: linear-gradient(to right, white, rgb(40, 141, 207));
+justify-content: flex-end;
+align-items: center;
+}
+.text {
+    position: absolute;
+    font-size: 30px;
+}
+
+.keyboard-area {
+    height: auto;
+    display: grid;
+    width: 200px;
+    gap: 7px;
+    grid-template-areas: "number7 number8 number9 opmais"
+                         "number4 number5 number6 opmenos"
+                         "number1 number2 number3 opvzs"
+                         "number0 ig del opdiv";
+                         
+    margin-top: 50px;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.key {
+border-radius: 10px;
+color: white;
+background-color: #5c5c5c;
+width: 50px;
+height: 50px;
+font-size: 30px;
+cursor: pointer;
+}
+
+.number0 {
+    grid-area: number0;
+}
+.number1 {
+grid-area: number1;
+}
+.number2 {
+grid-area: number2;
+}
+.number3 {
+grid-area: number3;
+}
+.number4 {
+grid-area: number4;
+}
+.number5 {
+grid-area: number5;
+}
+.number6 {
+grid-area: number6;
+}
+.number7 {
+grid-area: number7;
+}
+.number8 {
+grid-area: number8;
+}
+.number9 {
+grid-area: number9;
+}
+.del {
+grid-area: del;
+}
+.opmais {
+    grid-area: opmais;
+}
+.op- {
+    grid-area: opmenos;
+}
+.opx {
+    grid-area: opvzs;
+}
+.opdiv {
+    grid-area: opdiv;
+}
+.ig {
+    grid-area: ig
+}
